@@ -1,0 +1,11 @@
+<div class="well">
+	<h1>about</h1>
+	<div>{{currentTime}}</div>
+	<h3>Name {{firstName}} {{lastName}}</h3>
+	<h4>My Children</h4>
+	<ul>
+	{{#each child in model.children}}
+	 <li>{{child.name}}</li>
+	{{/each}}
+	<ul>
+</div>

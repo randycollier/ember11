@@ -1,0 +1,9 @@
+<h1>products</h1>
+{{outlet}}
+{{name}}
+<ul>
+ {{#each product in model}}
+	<li>{{#link-to 'product' product.id  }}{{product.name}} id:{{product.id}} {{/link-to}}</li>
+  {{/each}}
+</ul>
+
